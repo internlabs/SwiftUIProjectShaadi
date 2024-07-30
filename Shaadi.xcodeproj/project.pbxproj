@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4005C0A2C52BE63005E2434 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4005C092C52BE63005E2434 /* ImagePickerViewModel.swift */; };
+		F405655F2C1E962400B80A44 /* ContactPrivacyOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405655E2C1E962400B80A44 /* ContactPrivacyOption.swift */; };
+		F40565612C1E965400B80A44 /* ContactPrivacyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40565602C1E965400B80A44 /* ContactPrivacyViewModel.swift */; };
+		F415A6832C5519EB007BBE03 /* CountrySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A6822C5519EB007BBE03 /* CountrySelectionViewModel.swift */; };
+		F415A6862C551A5E007BBE03 /* CountrySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A6852C551A5E007BBE03 /* CountrySelectionView.swift */; };
+		F415A6882C551A7F007BBE03 /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A6872C551A7F007BBE03 /* CountryRowView.swift */; };
+		F415A68A2C551AB7007BBE03 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A6892C551AB7007BBE03 /* SearchBarView.swift */; };
+		F415A68C2C5529AD007BBE03 /* EducationAndCareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A68B2C5529AD007BBE03 /* EducationAndCareerView.swift */; };
+		F415A68E2C552AB7007BBE03 /* EmploymentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A68D2C552AB7007BBE03 /* EmploymentOption.swift */; };
+		F415A6902C552ADA007BBE03 /* EmploymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415A68F2C552ADA007BBE03 /* EmploymentViewModel.swift */; };
+		F43E1A542C1EB3B900AB272A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43E1A532C1EB3B900AB272A /* AuthenticationView.swift */; };
+		F46ABDAF2C3ECBBD004F4E49 /* WelcomeBackBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46ABDAE2C3ECBBD004F4E49 /* WelcomeBackBottomSheetView.swift */; };
+		F479E2C42C495598002031F6 /* BasicDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479E2C32C495598002031F6 /* BasicDetailsView.swift */; };
+		F4B6E1C02C395F6B000FF054 /* RegistrationSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6E1BF2C395F6B000FF054 /* RegistrationSuccessView.swift */; };
+		F4B6E1C22C396187000FF054 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6E1C12C396187000FF054 /* PhoneNumberView.swift */; };
+		F4B6E1C82C396808000FF054 /* CountryNumbers.json in Resources */ = {isa = PBXBuildFile; fileRef = F4B6E1C72C396807000FF054 /* CountryNumbers.json */; };
+		F4B6E1CA2C396D77000FF054 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6E1C92C396D77000FF054 /* PhoneNumber.swift */; };
+		F4B6E1CC2C396DF9000FF054 /* FinalAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6E1CB2C396DF9000FF054 /* FinalAuthenticationView.swift */; };
+		F4B83A5C2C1DF589006E613F /* KumbhSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A4E2C1DF589006E613F /* KumbhSans-Black.ttf */; };
+		F4B83A5D2C1DF589006E613F /* KumbhSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A4F2C1DF589006E613F /* KumbhSans-Bold.ttf */; };
+		F4B83A5E2C1DF589006E613F /* KumbhSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A502C1DF589006E613F /* KumbhSans-ExtraBold.ttf */; };
+		F4B83A5F2C1DF589006E613F /* KumbhSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A512C1DF589006E613F /* KumbhSans-ExtraLight.ttf */; };
+		F4B83A602C1DF589006E613F /* KumbhSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A522C1DF589006E613F /* KumbhSans-Light.ttf */; };
+		F4B83A612C1DF589006E613F /* KumbhSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A532C1DF589006E613F /* KumbhSans-Medium.ttf */; };
+		F4B83A622C1DF589006E613F /* KumbhSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A542C1DF589006E613F /* KumbhSans-Regular.ttf */; };
+		F4B83A632C1DF589006E613F /* KumbhSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A552C1DF589006E613F /* KumbhSans-SemiBold.ttf */; };
+		F4B83A642C1DF589006E613F /* KumbhSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A562C1DF589006E613F /* KumbhSans-Thin.ttf */; };
+		F4B83A652C1DF589006E613F /* KumbhSans-VariableFont_YOPQ,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B83A582C1DF589006E613F /* KumbhSans-VariableFont_YOPQ,wght.ttf */; };
+		F4B83A692C1DF6F9006E613F /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B83A682C1DF6F9006E613F /* FontsManager.swift */; };
+		F4B83A6C2C1DFB38006E613F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B83A6B2C1DFB38006E613F /* RegistrationView.swift */; };
+		F4B83A722C1E04EA006E613F /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B83A712C1E04EA006E613F /* CheckboxToggleStyle.swift */; };
+		F4B83A742C1E0C0C006E613F /* ContactPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B83A732C1E0C0C006E613F /* ContactPrivacyView.swift */; };
+		F4B8D19A2C57737F006AFF54 /* EducationSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8D1992C57737F006AFF54 /* EducationSelectionView.swift */; };
+		F4E231EE2C1D900B00F157C3 /* ShaadiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E231ED2C1D900B00F157C3 /* ShaadiApp.swift */; };
+		F4E231F02C1D900B00F157C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E231EF2C1D900B00F157C3 /* MainView.swift */; };
+		F4E231F22C1D900C00F157C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E231F12C1D900C00F157C3 /* Assets.xcassets */; };
+		F4E231F52C1D900C00F157C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E231F42C1D900C00F157C3 /* Preview Assets.xcassets */; };
+		F4F022522C53DA890053E4BF /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F022512C53DA890053E4BF /* HeightView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4005C092C52BE63005E2434 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
+		F405655E2C1E962400B80A44 /* ContactPrivacyOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPrivacyOption.swift; sourceTree = "<group>"; };
+		F40565602C1E965400B80A44 /* ContactPrivacyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPrivacyViewModel.swift; sourceTree = "<group>"; };
+		F415A6822C5519EB007BBE03 /* CountrySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionViewModel.swift; sourceTree = "<group>"; };
+		F415A6852C551A5E007BBE03 /* CountrySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionView.swift; sourceTree = "<group>"; };
+		F415A6872C551A7F007BBE03 /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
+		F415A6892C551AB7007BBE03 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F415A68B2C5529AD007BBE03 /* EducationAndCareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationAndCareerView.swift; sourceTree = "<group>"; };
+		F415A68D2C552AB7007BBE03 /* EmploymentOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploymentOption.swift; sourceTree = "<group>"; };
+		F415A68F2C552ADA007BBE03 /* EmploymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmploymentViewModel.swift; sourceTree = "<group>"; };
+		F43E1A532C1EB3B900AB272A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		F46ABDAE2C3ECBBD004F4E49 /* WelcomeBackBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackBottomSheetView.swift; sourceTree = "<group>"; };
+		F479E2C32C495598002031F6 /* BasicDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDetailsView.swift; sourceTree = "<group>"; };
+		F4B6E1BF2C395F6B000FF054 /* RegistrationSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessView.swift; sourceTree = "<group>"; };
+		F4B6E1C12C396187000FF054 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		F4B6E1C72C396807000FF054 /* CountryNumbers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountryNumbers.json; sourceTree = "<group>"; };
+		F4B6E1C92C396D77000FF054 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		F4B6E1CB2C396DF9000FF054 /* FinalAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalAuthenticationView.swift; sourceTree = "<group>"; };
+		F4B83A4E2C1DF589006E613F /* KumbhSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-Black.ttf"; sourceTree = "<group>"; };
+		F4B83A4F2C1DF589006E613F /* KumbhSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-Bold.ttf"; sourceTree = "<group>"; };
+		F4B83A502C1DF589006E613F /* KumbhSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F4B83A512C1DF589006E613F /* KumbhSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F4B83A522C1DF589006E613F /* KumbhSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-Light.ttf"; sourceTree = "<group>"; };
+		F4B83A532C1DF589006E613F /* KumbhSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-Medium.ttf"; sourceTree = "<group>"; };
+		F4B83A542C1DF589006E613F /* KumbhSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-Regular.ttf"; sourceTree = "<group>"; };
+		F4B83A552C1DF589006E613F /* KumbhSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F4B83A562C1DF589006E613F /* KumbhSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-Thin.ttf"; sourceTree = "<group>"; };
+		F4B83A582C1DF589006E613F /* KumbhSans-VariableFont_YOPQ,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumbhSans-VariableFont_YOPQ,wght.ttf"; sourceTree = "<group>"; };
+		F4B83A682C1DF6F9006E613F /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		F4B83A6A2C1DF8D2006E613F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F4B83A6B2C1DFB38006E613F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F4B83A712C1E04EA006E613F /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		F4B83A732C1E0C0C006E613F /* ContactPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPrivacyView.swift; sourceTree = "<group>"; };
+		F4B8D1992C57737F006AFF54 /* EducationSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationSelectionView.swift; sourceTree = "<group>"; };
+		F4E231EA2C1D900B00F157C3 /* Shaadi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shaadi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E231ED2C1D900B00F157C3 /* ShaadiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaadiApp.swift; sourceTree = "<group>"; };
+		F4E231EF2C1D900B00F157C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F4E231F12C1D900C00F157C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4E231F42C1D900C00F157C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4F022512C53DA890053E4BF /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4E231E72C1D900B00F157C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F415A6842C551A3F007BBE03 /* countryView */ = {
+			isa = PBXGroup;
+			children = (
+				F415A6852C551A5E007BBE03 /* CountrySelectionView.swift */,
+				F415A6872C551A7F007BBE03 /* CountryRowView.swift */,
+				F415A6892C551AB7007BBE03 /* SearchBarView.swift */,
+			);
+			path = countryView;
+			sourceTree = "<group>";
+		};
+		F4B83A4C2C1DF565006E613F /* others */ = {
+			isa = PBXGroup;
+			children = (
+				F4B83A702C1E04BB006E613F /* components */,
+				F4B83A4D2C1DF56F006E613F /* Fonts */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		F4B83A4D2C1DF56F006E613F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F4B83A5B2C1DF589006E613F /* Kumbh_Sans */,
+				F4B83A682C1DF6F9006E613F /* FontsManager.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F4B83A572C1DF589006E613F /* static */ = {
+			isa = PBXGroup;
+			children = (
+				F4B83A4E2C1DF589006E613F /* KumbhSans-Black.ttf */,
+				F4B83A4F2C1DF589006E613F /* KumbhSans-Bold.ttf */,
+				F4B83A502C1DF589006E613F /* KumbhSans-ExtraBold.ttf */,
+				F4B83A512C1DF589006E613F /* KumbhSans-ExtraLight.ttf */,
+				F4B83A522C1DF589006E613F /* KumbhSans-Light.ttf */,
+				F4B83A532C1DF589006E613F /* KumbhSans-Medium.ttf */,
+				F4B83A542C1DF589006E613F /* KumbhSans-Regular.ttf */,
+				F4B83A552C1DF589006E613F /* KumbhSans-SemiBold.ttf */,
+				F4B83A562C1DF589006E613F /* KumbhSans-Thin.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		F4B83A5B2C1DF589006E613F /* Kumbh_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				F4B83A572C1DF589006E613F /* static */,
+				F4B83A582C1DF589006E613F /* KumbhSans-VariableFont_YOPQ,wght.ttf */,
+			);
+			path = Kumbh_Sans;
+			sourceTree = "<group>";
+		};
+		F4B83A702C1E04BB006E613F /* components */ = {
+			isa = PBXGroup;
+			children = (
+				F4B83A712C1E04EA006E613F /* CheckboxToggleStyle.swift */,
+				F4B83A732C1E0C0C006E613F /* ContactPrivacyView.swift */,
+				F4B6E1C72C396807000FF054 /* CountryNumbers.json */,
+			);
+			name = components;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F4B8D1982C577365006AFF54 /* HighestEducationView */ = {
+			isa = PBXGroup;
+			children = (
+				F4B8D1992C57737F006AFF54 /* EducationSelectionView.swift */,
+			);
+			path = HighestEducationView;
+			sourceTree = "<group>";
+		};
+		F4E231E12C1D900B00F157C3 = {
+			isa = PBXGroup;
+			children = (
+				F4E231EC2C1D900B00F157C3 /* Shaadi */,
+				F4E231EB2C1D900B00F157C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4E231EB2C1D900B00F157C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4E231EA2C1D900B00F157C3 /* Shaadi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4E231EC2C1D900B00F157C3 /* Shaadi */ = {
+			isa = PBXGroup;
+			children = (
+				F4B83A6A2C1DF8D2006E613F /* Info.plist */,
+				F4E231FB2C1D96F000F157C3 /* Model */,
+				F4E231FC2C1D96F700F157C3 /* View */,
+				F4E231FD2C1D970600F157C3 /* ViewModel */,
+				F4B83A4C2C1DF565006E613F /* others */,
+				F4E231ED2C1D900B00F157C3 /* ShaadiApp.swift */,
+				F4E231F12C1D900C00F157C3 /* Assets.xcassets */,
+				F4E231F32C1D900C00F157C3 /* Preview Content */,
+			);
+			path = Shaadi;
+			sourceTree = "<group>";
+		};
+		F4E231F32C1D900C00F157C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4E231F42C1D900C00F157C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4E231FB2C1D96F000F157C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F405655E2C1E962400B80A44 /* ContactPrivacyOption.swift */,
+				F415A68D2C552AB7007BBE03 /* EmploymentOption.swift */,
+				F4B6E1C92C396D77000FF054 /* PhoneNumber.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4E231FC2C1D96F700F157C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4E231EF2C1D900B00F157C3 /* MainView.swift */,
+				F4B83A6B2C1DFB38006E613F /* RegistrationView.swift */,
+				F43E1A532C1EB3B900AB272A /* AuthenticationView.swift */,
+				F4B6E1BF2C395F6B000FF054 /* RegistrationSuccessView.swift */,
+				F4B6E1C12C396187000FF054 /* PhoneNumberView.swift */,
+				F4B6E1CB2C396DF9000FF054 /* FinalAuthenticationView.swift */,
+				F46ABDAE2C3ECBBD004F4E49 /* WelcomeBackBottomSheetView.swift */,
+				F479E2C32C495598002031F6 /* BasicDetailsView.swift */,
+				F415A68B2C5529AD007BBE03 /* EducationAndCareerView.swift */,
+				F4F022512C53DA890053E4BF /* HeightView.swift */,
+				F4B8D1982C577365006AFF54 /* HighestEducationView */,
+				F415A6842C551A3F007BBE03 /* countryView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4E231FD2C1D970600F157C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F40565602C1E965400B80A44 /* ContactPrivacyViewModel.swift */,
+				F415A68F2C552ADA007BBE03 /* EmploymentViewModel.swift */,
+				F4005C092C52BE63005E2434 /* ImagePickerViewModel.swift */,
+				F415A6822C5519EB007BBE03 /* CountrySelectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4E231E92C1D900B00F157C3 /* Shaadi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4E231F82C1D900C00F157C3 /* Build configuration list for PBXNativeTarget "Shaadi" */;
+			buildPhases = (
+				F4E231E62C1D900B00F157C3 /* Sources */,
+				F4E231E72C1D900B00F157C3 /* Frameworks */,
+				F4E231E82C1D900B00F157C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shaadi;
+			productName = Shaadi;
+			productReference = F4E231EA2C1D900B00F157C3 /* Shaadi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4E231E22C1D900B00F157C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F4E231E92C1D900B00F157C3 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = F4E231E52C1D900B00F157C3 /* Build configuration list for PBXProject "Shaadi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4E231E12C1D900B00F157C3;
+			productRefGroup = F4E231EB2C1D900B00F157C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4E231E92C1D900B00F157C3 /* Shaadi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4E231E82C1D900B00F157C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B83A652C1DF589006E613F /* KumbhSans-VariableFont_YOPQ,wght.ttf in Resources */,
+				F4B83A5D2C1DF589006E613F /* KumbhSans-Bold.ttf in Resources */,
+				F4E231F52C1D900C00F157C3 /* Preview Assets.xcassets in Resources */,
+				F4B83A632C1DF589006E613F /* KumbhSans-SemiBold.ttf in Resources */,
+				F4B83A612C1DF589006E613F /* KumbhSans-Medium.ttf in Resources */,
+				F4E231F22C1D900C00F157C3 /* Assets.xcassets in Resources */,
+				F4B83A642C1DF589006E613F /* KumbhSans-Thin.ttf in Resources */,
+				F4B6E1C82C396808000FF054 /* CountryNumbers.json in Resources */,
+				F4B83A622C1DF589006E613F /* KumbhSans-Regular.ttf in Resources */,
+				F4B83A5C2C1DF589006E613F /* KumbhSans-Black.ttf in Resources */,
+				F4B83A5E2C1DF589006E613F /* KumbhSans-ExtraBold.ttf in Resources */,
+				F4B83A602C1DF589006E613F /* KumbhSans-Light.ttf in Resources */,
+				F4B83A5F2C1DF589006E613F /* KumbhSans-ExtraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4E231E62C1D900B00F157C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F415A6832C5519EB007BBE03 /* CountrySelectionViewModel.swift in Sources */,
+				F415A68C2C5529AD007BBE03 /* EducationAndCareerView.swift in Sources */,
+				F4B83A692C1DF6F9006E613F /* FontsManager.swift in Sources */,
+				F4B6E1C02C395F6B000FF054 /* RegistrationSuccessView.swift in Sources */,
+				F415A68E2C552AB7007BBE03 /* EmploymentOption.swift in Sources */,
+				F4005C0A2C52BE63005E2434 /* ImagePickerViewModel.swift in Sources */,
+				F4B83A722C1E04EA006E613F /* CheckboxToggleStyle.swift in Sources */,
+				F4E231F02C1D900B00F157C3 /* MainView.swift in Sources */,
+				F4B6E1CC2C396DF9000FF054 /* FinalAuthenticationView.swift in Sources */,
+				F4E231EE2C1D900B00F157C3 /* ShaadiApp.swift in Sources */,
+				F415A6902C552ADA007BBE03 /* EmploymentViewModel.swift in Sources */,
+				F405655F2C1E962400B80A44 /* ContactPrivacyOption.swift in Sources */,
+				F43E1A542C1EB3B900AB272A /* AuthenticationView.swift in Sources */,
+				F415A68A2C551AB7007BBE03 /* SearchBarView.swift in Sources */,
+				F4B83A742C1E0C0C006E613F /* ContactPrivacyView.swift in Sources */,
+				F415A6882C551A7F007BBE03 /* CountryRowView.swift in Sources */,
+				F4B8D19A2C57737F006AFF54 /* EducationSelectionView.swift in Sources */,
+				F4B6E1C22C396187000FF054 /* PhoneNumberView.swift in Sources */,
+				F479E2C42C495598002031F6 /* BasicDetailsView.swift in Sources */,
+				F40565612C1E965400B80A44 /* ContactPrivacyViewModel.swift in Sources */,
+				F4B83A6C2C1DFB38006E613F /* RegistrationView.swift in Sources */,
+				F4B6E1CA2C396D77000FF054 /* PhoneNumber.swift in Sources */,
+				F4F022522C53DA890053E4BF /* HeightView.swift in Sources */,
+				F46ABDAF2C3ECBBD004F4E49 /* WelcomeBackBottomSheetView.swift in Sources */,
+				F415A6862C551A5E007BBE03 /* CountrySelectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4E231F62C1D900C00F157C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4E231F72C1D900C00F157C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4E231F92C1D900C00F157C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shaadi/Preview Content\"";
+				DEVELOPMENT_TEAM = WR5H634DWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Shaadi/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rutik.Shaadi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4E231FA2C1D900C00F157C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shaadi/Preview Content\"";
+				DEVELOPMENT_TEAM = WR5H634DWJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Shaadi/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rutik.Shaadi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4E231E52C1D900B00F157C3 /* Build configuration list for PBXProject "Shaadi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E231F62C1D900C00F157C3 /* Debug */,
+				F4E231F72C1D900C00F157C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4E231F82C1D900C00F157C3 /* Build configuration list for PBXNativeTarget "Shaadi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E231F92C1D900C00F157C3 /* Debug */,
+				F4E231FA2C1D900C00F157C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4E231E22C1D900B00F157C3 /* Project object */;
+}
