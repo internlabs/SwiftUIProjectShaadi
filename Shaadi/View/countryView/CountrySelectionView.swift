@@ -41,23 +41,19 @@ struct CountrySelectionView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(viewModel.selectedCountries, id: \.self) { country in
-                                        HStack(spacing: 4) {
-                                            Text(country)
-                                                .padding(.horizontal, 8)
-                                                .padding(.vertical, 4)
-                                                .background(Color.red)
-                                                .cornerRadius(16)
-                                                .foregroundColor(.white)
-                                            
-                                            Button(action: {
-                                                viewModel.deselectCountry(country)
-                                            }) {
+                                        // Updated button style for removing selected countries
+                                        Button(action: {
+                                            viewModel.deselectCountry(country)
+                                        }) {
+                                            HStack {
+                                                Text(country)
                                                 Image(systemName: "xmark")
-                                                    .foregroundColor(.white)
-                                                    .padding(4)
-                                                    .background(Color.red)
-                                                    .clipShape(Circle())
                                             }
+                                            .padding(.horizontal, 12)
+                                            .padding(.vertical, 8)
+                                            .background(Color.red)
+                                            .foregroundColor(.white)
+                                            .cornerRadius(20)
                                         }
                                         .padding(.leading, 4)
                                     }
