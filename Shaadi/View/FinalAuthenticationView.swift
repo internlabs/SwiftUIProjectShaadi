@@ -5,7 +5,8 @@ struct FinalAuthenticationView: View {
     @FocusState private var focusedField: Int?
     @State private var isShowingSheet = false
     @State private var isPasswordEntered = false
-    
+    @Environment(\.presentationMode) var presentationMode // Add this line
+
     var phoneNumber: String
     
     var body: some View {
@@ -15,6 +16,7 @@ struct FinalAuthenticationView: View {
                 HStack {
                     Button(action: {
                         // Action to go back
+                        presentationMode.wrappedValue.dismiss() // Dismiss the current view
                     }) {
                         Image(systemName: "chevron.left")
                             .font(.title2)

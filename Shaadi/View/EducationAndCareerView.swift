@@ -4,9 +4,10 @@ struct EducationAndCareerView: View {
     @State private var highestEducation: String = ""
     @State private var professionDescription: String = ""
     @State private var salary: String = ""
-    
     @ObservedObject var viewModel = EmploymentViewModel()
-    
+    @State private var textEditorHeight: CGFloat = 40 // Initial height
+    // Environment variable to manage presentation
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 16) {
@@ -14,6 +15,7 @@ struct EducationAndCareerView: View {
                 HStack {
                     Button(action: {
                         // Action to go back
+                        presentationMode.wrappedValue.dismiss()
                     }) {
                         Image(systemName: "chevron.left")
                             .font(.title2)
@@ -63,13 +65,31 @@ struct EducationAndCareerView: View {
                 }
                 .padding(.horizontal)
                 
-                // Profession description text field
-                TextField("Enter description about your profession", text: $professionDescription)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-                    .padding(.top, 20)
+                // Profession description text field (TextEditor)
+                VStack(alignment: .leading) {
+                    Text("Enter description about your profession")
+                        .font(.custom("KumbhSans-Regular", size: 16))
+                        .foregroundColor(.gray)
+                        .padding(.horizontal)
+                    
+                    ZStack(alignment: .topLeading) {
+                        // TextEditor for multiline input
+                        TextEditor(text: $professionDescription)
+                            .frame(height: max(textEditorHeight, 40)) // Dynamic height
+                            .padding(8)
+                            .background(Color(.systemGray6)) // Match TextField color
+                            .cornerRadius(8)
+                            .padding(.horizontal)
+                            .onAppear {
+                                // Fix TextEditor background color on appearance
+                                UITextView.appearance().backgroundColor = .clear
+                            }
+                            .onChange(of: professionDescription) { _ in
+                                adjustTextEditorHeight() // Adjust height based on content
+                            }
+                    }
+                }
+                .padding(.top, 20)
                 
                 // Salary text field
                 TextField("Enter your Salary", text: $salary)
@@ -93,7 +113,7 @@ struct EducationAndCareerView: View {
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 10)
             }
             .padding(.vertical, 12)
         }
@@ -138,6 +158,21 @@ struct EducationAndCareerView: View {
         case .defense:
             return 100
         }
+    }
+    
+    // Adjust the TextEditor height based on content
+    private func adjustTextEditorHeight() {
+        // Calculate the height needed based on content size
+        let textSize = CGSize(width: UIScreen.main.bounds.width - 64, height: .infinity)
+        let estimatedHeight = professionDescription.boundingRect(
+            with: textSize,
+            options: .usesLineFragmentOrigin,
+            attributes: [.font: UIFont.systemFont(ofSize: 16)],
+            context: nil
+        ).height
+        
+        // Ensure a minimum height of 40, and update the height dynamically
+        textEditorHeight = max(estimatedHeight, 40)
     }
 }
 

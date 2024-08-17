@@ -44,7 +44,7 @@
 		F4E231F02C1D900B00F157C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E231EF2C1D900B00F157C3 /* MainView.swift */; };
 		F4E231F22C1D900C00F157C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E231F12C1D900C00F157C3 /* Assets.xcassets */; };
 		F4E231F52C1D900C00F157C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E231F42C1D900C00F157C3 /* Preview Assets.xcassets */; };
-		F4F022522C53DA890053E4BF /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F022512C53DA890053E4BF /* HeightView.swift */; };
+		F4F022522C53DA890053E4BF /* HeightSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F022512C53DA890053E4BF /* HeightSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +87,7 @@
 		F4E231EF2C1D900B00F157C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F4E231F12C1D900C00F157C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E231F42C1D900C00F157C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F4F022512C53DA890053E4BF /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+		F4F022512C53DA890053E4BF /* HeightSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +234,7 @@
 				F46ABDAE2C3ECBBD004F4E49 /* WelcomeBackBottomSheetView.swift */,
 				F479E2C32C495598002031F6 /* BasicDetailsView.swift */,
 				F415A68B2C5529AD007BBE03 /* EducationAndCareerView.swift */,
-				F4F022512C53DA890053E4BF /* HeightView.swift */,
+				F4F022512C53DA890053E4BF /* HeightSelectionView.swift */,
 				F4B8D1982C577365006AFF54 /* HighestEducationView */,
 				F415A6842C551A3F007BBE03 /* countryView */,
 			);
@@ -355,7 +355,7 @@
 				F40565612C1E965400B80A44 /* ContactPrivacyViewModel.swift in Sources */,
 				F4B83A6C2C1DFB38006E613F /* RegistrationView.swift in Sources */,
 				F4B6E1CA2C396D77000FF054 /* PhoneNumber.swift in Sources */,
-				F4F022522C53DA890053E4BF /* HeightView.swift in Sources */,
+				F4F022522C53DA890053E4BF /* HeightSelectionView.swift in Sources */,
 				F46ABDAF2C3ECBBD004F4E49 /* WelcomeBackBottomSheetView.swift in Sources */,
 				F415A6862C551A5E007BBE03 /* CountrySelectionView.swift in Sources */,
 			);

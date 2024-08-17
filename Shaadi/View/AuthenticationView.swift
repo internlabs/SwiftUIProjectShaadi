@@ -8,6 +8,9 @@ struct AuthenticationView: View {
     // Phone number to be verified
     var phoneNumber: String
     
+    // Environment variable to manage presentation
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -15,6 +18,7 @@ struct AuthenticationView: View {
                     // Back button
                     Button(action: {
                         // MARK: Action to go back
+                        presentationMode.wrappedValue.dismiss()
                     }) {
                         Image(systemName: "chevron.left")
                             .font(.title2)
@@ -30,7 +34,7 @@ struct AuthenticationView: View {
                     .padding(.top, 40)
                 
                 // Instructional text with the phone number
-                Text("Enter 4-digit we have sent via the phone number \(phoneNumber)")
+                Text("Enter 4-digit code we have sent to the phone number \(phoneNumber)")
                     .font(.custom(FontsManager.KumbhSans.Regular, size: 19))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
