@@ -491,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shaadi/Preview Content\"";
-				DEVELOPMENT_TEAM = WR5H634DWJ;
+				DEVELOPMENT_TEAM = 63N9M44LL4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Shaadi/Info.plist;
@@ -506,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rutik.Shaadi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.internlabs.iOSProjectShaadi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -522,7 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shaadi/Preview Content\"";
-				DEVELOPMENT_TEAM = WR5H634DWJ;
+				DEVELOPMENT_TEAM = 63N9M44LL4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Shaadi/Info.plist;
@@ -537,7 +537,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rutik.Shaadi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.internlabs.iOSProjectShaadi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

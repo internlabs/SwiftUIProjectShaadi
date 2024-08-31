@@ -48,18 +48,26 @@ struct AuthenticationView: View {
                             .frame(width: 50, height: 50)
                             .background(
                                 RoundedRectangle(cornerRadius: 30)
-                                    .stroke(otp[index].isEmpty ? Color.gray : Color.red, lineWidth: 1)
+                                    .stroke(focusedField == index ? Color("flamingoColor") : Color("grayColor"), lineWidth: 1)
                             )
                             .multilineTextAlignment(.center)
                             .keyboardType(.numberPad)
                             .focused($focusedField, equals: index)
-                            .onChange(of: otp[index]) { newValue in
-                                // Auto-focus on the next field when a digit is entered
+                            .onAppear(perform: {
+                                focusedField = 0
+                            })
+                            .onChange(of: otp[index]) { _, newValue in
                                 if newValue.count == 1 {
+                                    // Auto-focus on the next field when a digit is entered
                                     if index < 3 {
                                         focusedField = index + 1
                                     } else {
                                         focusedField = nil
+                                    }
+                                } else if newValue.isEmpty {
+                                    // Auto-focus on the previous field when text is deleted
+                                    if index > 0 {
+                                        focusedField = index - 1
                                     }
                                 }
                             }
