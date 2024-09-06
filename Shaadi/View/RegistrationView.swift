@@ -48,7 +48,7 @@ struct RegistrationView: View {
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .textContentType(.emailAddress)
-                
+                    .keyboardType(.emailAddress)
                 // MARK: PASSWORD
                 HStack {
                     if showPassword {
